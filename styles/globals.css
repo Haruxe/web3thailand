@@ -11,6 +11,13 @@
 }
 
 @font-face {
+  font-family: "modak";
+  src: url("/fonts/Modak.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "opensans";
   src: url("/fonts/opensans.ttf") format("truetype");
   font-weight: normal;
@@ -23,12 +30,20 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "over";
+  src: url("/fonts/over.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "opensans";
+  background: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 100;
 }
 
 a {
@@ -40,16 +55,17 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: #292522;
-  }
-}
-
 .font-righteous {
   font-family: "Righteous-Regular";
+}
+
+.font-modak {
+  font-family: "modak";
+}
+
+.font-noto {
+  font-family: "noto-sans";
+}
+.font-over {
+  font-family: "over";
 }
