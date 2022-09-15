@@ -14,7 +14,7 @@ function Navbar() {
             <a href="https://twitter.com/web3sg">
               <Twitter className="w-6" />
             </a>
-            <a href="/">
+            <a href="https://twitter.com/web3sg">
               <Email className="w-5" />
             </a>
           </div>
@@ -29,7 +29,7 @@ function Navbar() {
               />
             </a>
           </div>
-          <motion.a className="mx-auto" href="/">
+          <motion.a className="mx-auto">
             <h1 className="text-4xl select-none cursor-pointer font-modak tracking-widest text-white px-3 rounded-lg pt-1 bg-black">
               Web3SG
             </h1>

@@ -32,11 +32,11 @@ function index() {
                 working closely with our clients, understanding them and
                 providing them a dedicated team of highly skilled consultants.{" "}
                 <br />
-                <br />A good design isn't just a visual element, it is a flow of
-                space when in use, the thoughts given to the refinement and an
-                attention to details. When incorporated well, design affects us
-                physically mentally and spiritually. We combine both art and
-                technology in bringing out the best possible beautiful,
+                <br />A good design isn&#39;t just a visual element, it is a
+                flow of space when in use, the thoughts given to the refinement
+                and an attention to details. When incorporated well, design
+                affects us physically mentally and spiritually. We combine both
+                art and technology in bringing out the best possible beautiful,
                 functional and whole space. Drop us a message and our team will
                 contact you soonest. <br />
                 <br />

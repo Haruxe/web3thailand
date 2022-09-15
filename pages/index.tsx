@@ -19,8 +19,8 @@ const Home: NextPage = () => {
                 <RightArrowAlt className="w-9 bg-white shadow-3xl rounded-full p-1 mr-2 bg-opacity-40 backdrop-blur-2xl" />
               }
             >
-              {data.map((i) => (
-                <div className="flex flex-col place-content-center">
+              {data.map((i, key) => (
+                <div className="flex flex-col place-content-center" key={key}>
                   <Image
                     src={i.image}
                     alt={i.image}
