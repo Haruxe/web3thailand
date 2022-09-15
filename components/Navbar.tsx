@@ -29,33 +29,51 @@ function Navbar() {
               />
             </a>
           </div>
-          <motion.a className="mx-auto">
-            <h1 className="text-4xl select-none cursor-pointer font-modak tracking-widest text-white px-3 rounded-lg pt-1 bg-black">
-              Web3SG
-            </h1>
-          </motion.a>
+          <div className="mx-auto">
+            <Link href="/">
+              <h1 className="text-4xl select-none font-bold cursor-pointer font-gilroy tracking-widest text-white px-2 rounded-md py-1 bg-black">
+                WEB3SG
+              </h1>
+            </Link>
+          </div>
         </div>
-        <div className="mx-auto flex my-3 w-[400px] place-content-between font-bold">
-          <div className="cursor-pointer">
+        <div className="mx-auto flex mt-3 mb-1 w-[400px] place-content-between font-bold">
+          <motion.div
+            className="cursor-pointer rounded-sm px-2 py-1"
+            whileHover={{ backgroundColor: "#e7e7e7" }}
+            style={{ backgroundColor: "#00000000" }}
+          >
             <Link className="cursor-pointer" href="/">
               <h1>Home</h1>
             </Link>
-          </div>
-          <div className="cursor-pointer">
+          </motion.div>
+          <motion.div
+            className="cursor-pointer rounded-sm px-2 py-1"
+            whileHover={{ backgroundColor: "#e7e7e7" }}
+            style={{ backgroundColor: "#00000000" }}
+          >
             <Link className="cursor-pointer" href="/nft">
               <h1>NFT</h1>
             </Link>
-          </div>
-          <div className="cursor-pointer">
+          </motion.div>
+          <motion.div
+            className="cursor-pointer rounded-sm px-2 py-1"
+            whileHover={{ backgroundColor: "#e7e7e7" }}
+            style={{ backgroundColor: "#00000000" }}
+          >
             <Link className="cursor-pointer" href="/about">
               <h1>About</h1>
             </Link>
-          </div>
-          <div className="cursor-pointer">
+          </motion.div>
+          <motion.div
+            className="cursor-pointer rounded-sm px-2 py-1"
+            whileHover={{ backgroundColor: "#e7e7e7" }}
+            style={{ backgroundColor: "#00000000" }}
+          >
             <Link className="cursor-pointer" href="/join">
               <h1>Join Us</h1>
             </Link>
-          </div>
+          </motion.div>
         </div>
       </div>
     </nav>
