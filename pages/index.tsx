@@ -7,7 +7,7 @@ import { data } from "../components/slideData";
 const Home: NextPage = () => {
   return (
     <>
-      <div className="mx-auto pt-[8rem]">
+      <div className="mx-auto">
         <div className="mx-auto">
           <div className="max-w-[1024px] mx-auto px-5">
             <Fade
