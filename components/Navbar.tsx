@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Email } from "styled-icons/evaicons-solid";
 import { Check, Twitter } from "styled-icons/remix-fill";
 import { motion } from "framer-motion";
@@ -9,13 +9,16 @@ function Navbar() {
   const [isConnected, setIsConnected] = useState(false);
   const [signer, setSigner] = useState();
   const [address, setAddress] = useState();
+
   async function connectHandler() {
     // @ts-ignore
     if (typeof window.ethereum !== "undefined") {
       console.log("MetaMask detected");
       try {
         // @ts-ignore
-        await window.ethereum.request({ method: "eth_requestAccounts" });
+        const accounts = await window.ethereum.request({
+          method: "eth_requestAccounts",
+        });
         // @ts-ignore
         let connectedProvider = new ethers.providers.Web3Provider(
           // @ts-ignore
@@ -24,7 +27,7 @@ function Navbar() {
         // @ts-ignore
         setSigner(connectedProvider.getSigner());
         // @ts-ignore
-        setAddress(window.ethereum.selectedAddress);
+        setAddress(accounts[0]);
 
         setIsConnected(true);
       } catch (e) {
@@ -34,6 +37,11 @@ function Navbar() {
       console.log("MetaMask not found");
     }
   }
+
+  useEffect(() => {
+    connectHandler();
+  }, []);
+
   return (
     <>
       <nav className="mx-auto p-2 fixed right-0 left-0 bg-[#ffffff] backdrop-blur-xl bg-opacity-70 z-20">
@@ -49,22 +57,19 @@ function Navbar() {
             </div>
             <div className="absolute top-2 right-2 space-x-3 my-auto md:text-sm text-xs ">
               {!isConnected ? (
-                <button
-                  onClick={connectHandler}
-                  className="select-none font-bold cursor-pointer font-gilroy-bold tracking-widest text-white px-2 rounded-sm py-1 bg-blue-500"
-                >
+                <button className="select-none font-bold cursor-pointer font-gilroy-bold tracking-widest text-white px-2 rounded-sm py-1 bg-blue-500">
                   CONNECT
                 </button>
               ) : (
                 <div className="font-bold font-gilroy-bold tracking-widest text-white px-2 rounded-sm py-1 bg-blue-500 place-content-center flex flex-row">
                   <h1 className="my-auto">
-                    {
-                      // @ts-ignore
-                      address.substring(0, 4) +
+                    {address
+                      ? // @ts-ignore
+                        address.substring(0, 4) +
                         "..." +
                         // @ts-ignore
                         address.substring(address.length, address.length - 4)
-                    }
+                      : ""}
                   </h1>
                   <Check className="w-5 my-auto ml-2" />
                 </div>
