@@ -9,25 +9,28 @@ const Home: NextPage = () => {
     <>
       <div className="mx-auto">
         <div className="mx-auto">
-          <div className="max-w-[1024px] mx-auto px-5">
+          <div className="max-w-[1024px] mx-auto px-5 ">
             <Fade
               duration={3000}
               prevArrow={
-                <LeftArrowAlt className="w-9 bg-white shadow-3xl rounded-full p-1 ml-2 bg-opacity-40 backdrop-blur-2xl" />
+                <LeftArrowAlt className="w-9 bg-white shadow-3xl rounded-full p-1 ml-2 bg-opacity-40 backdrop-blur-2xl shadow-3xl" />
               }
               nextArrow={
-                <RightArrowAlt className="w-9 bg-white shadow-3xl rounded-full p-1 mr-2 bg-opacity-40 backdrop-blur-2xl" />
+                <RightArrowAlt className="w-9 bg-white shadow-3xl rounded-full p-1 mr-2 bg-opacity-40 backdrop-blur-2xl shadow-3xl" />
               }
             >
               {data.map((i, key) => (
-                <div className="flex flex-col place-content-center" key={key}>
+                <div
+                  className="flex flex-col place-content-center shadow-3xl"
+                  key={key}
+                >
                   <Image
                     src={i.image}
                     alt={i.image}
                     layout="intrinsic"
                     width={"1024px"}
                     height={"684px"}
-                    className="flex mx-auto"
+                    className="flex mx-auto shadow-3xl"
                   />
                   <h1 className="flex absolute bottom-5 right-5 font-bold text-xl lg:text-2xl bg-opacity-40 backdrop-blur-2xl text-black bg-white shadow-3xl px-2 py-1 rounded-md font-righteous">
                     {i.text}

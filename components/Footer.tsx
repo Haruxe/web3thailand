@@ -21,15 +21,15 @@ function Footer() {
           </h1>
         </div>
         <div className="flex place-content-between mt-5 md:w-2/3 w-full mx-auto">
-          <div className="flex flex-col mx-auto">
+          <div className="flex flex-col mx-auto ">
             <div className="h-[2px] bg-white w-5 mb-2" />
             <h1>MENU</h1>
 
             <div className="flex flex-col font-gilroy md:text-md text-sm underline space-y-2 mt-3">
               <Link href="/">Home</Link>
-              <Link href="/">NFT</Link>
+              <Link href="/pass">Pass</Link>
               <Link href="/about">About</Link>
-              <Link href="/join">Join Us</Link>
+              {/* <Link href="/join">Join Us</Link> */}
             </div>
           </div>
           <div className="flex mx-auto flex-col">
@@ -37,8 +37,7 @@ function Footer() {
             <h1>SOCIALS</h1>
             <div className="flex flex-col font-gilroy md:text-md text-sm underline space-y-2 mt-3">
               <a href="https://twitter.com/web3sg">Twitter</a>
-              <a href="https://opensea.io">OpenSea</a>
-              <a href="https://twitter.com/web3sg">Email</a>
+              <a href="https://discord.gg/web3sg">Discord</a>
             </div>
           </div>
           <div className="flex mx-auto flex-col">
@@ -48,13 +47,6 @@ function Footer() {
               <h1>Mail</h1>
               <a
                 href="mailto:info@web3ventures.com.sg"
-                className="underline font-gilroy"
-              >
-                info@web3ventures.com.sg
-              </a>
-              <h1>Twitter</h1>
-              <a
-                href="https://twitter.com/web3sg"
                 className="underline font-gilroy"
               >
                 info@web3ventures.com.sg
