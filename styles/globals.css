@@ -52,6 +52,7 @@ body {
   background: #ffffff;
   font-family: "Gilroy-Regular";
   font-weight: 100;
+  min-height: 100%;
 }
 
 a {

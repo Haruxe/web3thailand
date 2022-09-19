@@ -63,38 +63,13 @@ const Home: NextPage = () => {
                     />
                   </div>
                   <p className="text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Tempus imperdiet nulla malesuada pellentesque elit
-                    eget. Quisque id diam vel quam elementum pulvinar etiam non
-                    quam.
+                    Web3SG was the official crypto sponsor for COMEX 2022,
+                    Singapore's largest IT fair.
                   </p>
                 </div>
                 <div className="bg-black p-6 mx-auto place-content-center place-items-center flex flex-col space-y-10">
                   <h1 className="mx-auto font-gilroy-bold text-xl">
-                    Web3SG 2022
-                  </h1>
-                  <div className="">
-                    <Image
-                      src={"/images/hero3.jpg"}
-                      alt={"placeholder"}
-                      layout="intrinsic"
-                      width={"300px"}
-                      height={"210px"}
-                      className="flex mx-auto rounded-sm"
-                    />
-                  </div>
-                  <p className="text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Tempus imperdiet nulla malesuada pellentesque elit
-                    eget. Quisque id diam vel quam elementum pulvinar etiam non
-                    quam.
-                  </p>
-                </div>
-                <div className="bg-black p-6 mx-auto place-content-center place-items-center flex flex-col space-y-10">
-                  <h1 className="mx-auto font-gilroy-bold text-xl">
-                    KaijuKingz X Web3SG 2022
+                    KaijuKingz Dinner 2022
                   </h1>
                   <div className="">
                     <Image
@@ -107,11 +82,25 @@ const Home: NextPage = () => {
                     />
                   </div>
                   <p className="text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Tempus imperdiet nulla malesuada pellentesque elit
-                    eget. Quisque id diam vel quam elementum pulvinar etiam non
-                    quam.
+                    Web3SG hosted Singapore's most successful NFT community
+                    gathering for the Kaiju Kingz community.
+                  </p>
+                </div>
+                <div className="bg-black p-6 mx-auto place-content-center place-items-center flex flex-col space-y-10">
+                  <h1 className="mx-auto font-gilroy-bold text-xl">ARTNOW</h1>
+                  <div className="">
+                    <Image
+                      src={"/images/artnow.jpg"}
+                      alt={"placeholder"}
+                      layout="intrinsic"
+                      width={"300px"}
+                      height={"210px"}
+                      className="flex mx-auto rounded-sm"
+                    />
+                  </div>
+                  <p className="text-center">
+                    Web3SG is partnered with ARTNOW, an upscale art gallery in
+                    the heart of Singapore.
                   </p>
                 </div>
               </div>

@@ -53,22 +53,25 @@ function Navbar({ connected, address, connectHandler }) {
               </Link>
             </div>
           </div>
-          <div className="mx-auto flex mt-3 mb-1 sm:w-[400px] w-2/3 place-content-between font-bold text-sm sm:text-lg">
+          <div className="mx-auto flex mt-3 mb-1 sm:w-[500px] w-3/4 place-content-between font-bold text-sm sm:text-lg">
             <Link className="cursor-pointer" href="/">
               <motion.div className="cursor-pointer rounded-lg px-3 py-1 hover:bg-[#7b7b7b15]">
                 <h1>Home</h1>
               </motion.div>
             </Link>
-
             <Link className="cursor-pointer" href="/pass">
               <motion.div className="cursor-pointer rounded-lg px-3 py-1 hover:bg-[#7b7b7b15]">
                 <h1>SG Pass</h1>{" "}
               </motion.div>
             </Link>
-
             <Link className="cursor-pointer" href="/about">
               <motion.div className="cursor-pointer rounded-lg px-3 py-1 hover:bg-[#7b7b7b15]">
                 <h1>About</h1>
+              </motion.div>
+            </Link>
+            <Link className="cursor-pointer" href="/partners">
+              <motion.div className="cursor-pointer rounded-lg px-3 py-1 hover:bg-[#7b7b7b15]">
+                <h1>Partners</h1>
               </motion.div>
             </Link>
             {/* <Link className="cursor-pointer" href="/join">
