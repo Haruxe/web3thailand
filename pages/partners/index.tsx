@@ -23,7 +23,7 @@ function index({ signer }) {
   function FeaturedCollabPanel({ url, image }) {
     return (
       <div className="w-[7rem] h-[7rem] relative outline outline-1 outline-black">
-        <a href={url} target="_blank">
+        <a href={url} target="_blank" rel="noreferrer">
           <Image
             src={"/images/" + image}
             width={"112"}

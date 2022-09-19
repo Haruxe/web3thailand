@@ -64,7 +64,7 @@ const Home: NextPage = () => {
                   </div>
                   <p className="text-center">
                     Web3SG was the official crypto sponsor for COMEX 2022,
-                    Singapore's largest IT fair.
+                    Singapore&apos;s largest IT fair.
                   </p>
                 </div>
                 <div className="bg-black p-6 mx-auto place-content-center place-items-center flex flex-col space-y-10">
@@ -82,7 +82,7 @@ const Home: NextPage = () => {
                     />
                   </div>
                   <p className="text-center">
-                    Web3SG hosted Singapore's most successful NFT community
+                    Web3SG hosted Singapore&apos;s most successful NFT community
                     gathering for the Kaiju Kingz community.
                   </p>
                 </div>
