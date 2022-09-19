@@ -7,7 +7,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 import detectEthereumProvider from "@metamask/detect-provider";
 
 // @ts-ignore
-function index() {
+function Index() {
   const [loading, setLoading] = useState(false);
   // NOT REAL ADDRESS!
   const contractAddress = "0x1775b7ae0180d917FDC57d64810E2Fe4887B22c5";
@@ -141,4 +141,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

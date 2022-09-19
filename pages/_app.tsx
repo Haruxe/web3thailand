@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Head from "next/head";
 import Script from "next/script";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import detectEthereumProvider from "@metamask/detect-provider";
 
 function MyApp({ Component }: AppProps) {
