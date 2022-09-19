@@ -8,7 +8,7 @@ function index({ signer }) {
   //Function that handles minting
   async function mintHandler() {
     // @ts-ignore
-    if (window.ethereum !== "undefined" && signer) {
+    if (window.ethereum !== "undefined") {
       const contractAddress = "0x000000000000000000000000000";
       const abi = [{}];
       const contract = new ethers.Contract(contractAddress, abi, signer);
@@ -22,7 +22,7 @@ function index({ signer }) {
   // @ts-ignore
   function FeaturedCollabPanel({ url, image }) {
     return (
-      <div className="w-[7rem] h-[7rem] relative outline outline-1 outline-black">
+      <div className="w-[5rem] h-[5rem] md:h-[7rem] md:w-[7rem] relative outline outline-1 outline-black">
         <a href={url} target="_blank" rel="noreferrer">
           <Image
             src={"/images/" + image}
@@ -73,7 +73,7 @@ function index({ signer }) {
             <div className="flex flex-col w-full md:w-1/2">
               <h1 className="text-3xl font-bold">Web3 Partners</h1>
               <div className="h-[2px] bg-black w-10 my-5" />
-              <div className="grid gap-5 grid-flow-col grid-rows-3">
+              <div className="grid gap-3 md:gap-5 grid-flow-col md:grid-rows-3 grid-rows-5">
                 <FeaturedCollabPanel
                   url="https://opensea.io/collection/kaiju-kingz"
                   image="KaijuKingz.png"

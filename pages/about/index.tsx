@@ -55,7 +55,7 @@ function index() {
                 <br /> The NFT and Crypto markets are sensitive and skeptical of
                 large conglomerates entering the space who bring their
                 traditional strategies here, however we believe for this space
-                to truly grow, we have to enable these successful traditional
+                to truly grow we have to enable these successful traditional
                 business models to establish themselves within our ecosystem.{" "}
                 <br />
                 <br />
@@ -78,7 +78,7 @@ function index() {
         </div>
       </div>
       <div className="bg-white my-auto flex">
-        <div className="py-10 place-content-center mx-auto text-black">
+        <div className="py-10 md:px-6 place-content-center mx-auto text-black">
           {/* <h1 className=" text-3xl mx-auto text-center font-gilroy-bold">
             Experience
           </h1>

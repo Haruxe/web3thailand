@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -16,10 +17,19 @@ function Footer() {
     >
       <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row w-full place-items-center">
         <div className="flex">
-          <div className="flex flex-col space-y-5">
-            <h1 className="md:text-4xl mx-auto text-xl select-none font-bold cursor-pointer font-gilroy tracking-widest text-white px-2 rounded-md py-1 bg-black shadow-2xl">
-              WEB3SG
-            </h1>
+          <div className="grid gap-5">
+            <Link href="/">
+              {/* <h1 className="md:text-4xl text-2xl select-none font-bold cursor-pointer font-gilroy tracking-widest text-white px-2 rounded-md py-1 bg-black hover:bg-[#303030]">
+                  WEB3SG
+                </h1> */}
+              <Image
+                src="/images/LogoWhite.png"
+                alt="logo"
+                width={"190"}
+                height={"50"}
+                layout="fixed"
+              />
+            </Link>
             <h1 className="text-sm font-gilroy text-left">
               Copyright Web3 Ventures Pte Ltd.
             </h1>

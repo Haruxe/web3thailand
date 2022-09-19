@@ -4,11 +4,11 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Head from "next/head";
 import Script from "next/script";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import detectEthereumProvider from "@metamask/detect-provider";
 
 function MyApp({ Component }: AppProps) {
   const [isConnected, setIsConnected] = useState(false);
-  const [signer, setSigner] = useState();
   const [address, setAddress] = useState("");
 
   async function connectHandler() {
@@ -16,21 +16,32 @@ function MyApp({ Component }: AppProps) {
     if (typeof window.ethereum !== "undefined") {
       console.log("MetaMask detected");
       try {
+        const provider = await detectEthereumProvider();
         // @ts-ignore
-        const accounts = await window.ethereum.request({
+        const accounts = await provider.request({
           method: "eth_requestAccounts",
         });
         // @ts-ignore
-        let connectedProvider = new ethers.providers.Web3Provider(
+        const chainId = await provider.request({
+          method: "eth_chainId",
+        });
+        if (chainId !== "0x1") {
+          console.log("Connect To Mainnet!");
           // @ts-ignore
-          window.ethereum
-        );
-        // @ts-ignore
-        setSigner(connectedProvider.getSigner());
-        // @ts-ignore
-        setAddress(accounts[0]);
+          const success = await provider.request({
+            method: "wallet_switchEthereumChain",
+            params: [{ chainId: "0x1" }],
+          });
+          if (success == null) {
+            connectHandler();
+          }
+        } else {
+          console.log(chainId);
+          // @ts-ignore
+          setAddress(accounts[0]);
 
-        setIsConnected(true);
+          setIsConnected(true);
+        }
       } catch (e) {
         console.log(e);
       }
@@ -40,6 +51,7 @@ function MyApp({ Component }: AppProps) {
   }
 
   useEffect(() => {
+    // @ts-ignore
     connectHandler();
   }, []);
 
@@ -65,7 +77,7 @@ function MyApp({ Component }: AppProps) {
         address={address}
         connectHandler={connectHandler}
       />
-      <Component signer={signer} />
+      <Component />
       <Footer />
     </>
   );

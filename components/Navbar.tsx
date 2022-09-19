@@ -4,6 +4,7 @@ import { Check, Twitter } from "styled-icons/remix-fill";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { DiscordAlt } from "styled-icons/boxicons-logos";
+import Image from "next/image";
 // @ts-ignore
 function Navbar({ connected, address, connectHandler }) {
   return (
@@ -12,13 +13,25 @@ function Navbar({ connected, address, connectHandler }) {
         <div className="max-w-[1400px] mx-auto relative">
           <div className="flex">
             <div className="absolute top-2 left-2 space-x-3 my-auto">
-              <a href="https://twitter.com/web3sg">
+              <a
+                href="https://twitter.com/web3sg"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Twitter className="w-5" />
               </a>
-              <a href="mailto:info@web3ventures.com.sg">
+              <a
+                href="mailto:info@web3ventures.com.sg"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Email className="w-5" />
               </a>
-              <a href="https://discord.gg/web3sg">
+              <a
+                href="https://discord.gg/web3sg"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <DiscordAlt className="w-5" />
               </a>
             </div>
@@ -31,7 +44,7 @@ function Navbar({ connected, address, connectHandler }) {
                   CONNECT
                 </button>
               ) : (
-                <div className="font-bold font-gilroy-bold tracking-widest text-white px-2 rounded-sm py-1 bg-blue-500 place-content-center flex flex-row">
+                <div className="font-bold font-gilroy-bold tracking-widest text-white md:px-2 px-1 rounded-sm md:py-1 bg-blue-500 place-content-center flex flex-row">
                   <h1 className="my-auto">
                     {address
                       ? // @ts-ignore
@@ -41,19 +54,26 @@ function Navbar({ connected, address, connectHandler }) {
                         address.substring(address.length, address.length - 4)
                       : ""}
                   </h1>
-                  <Check className="w-5 my-auto ml-2" />
+                  <Check className="md:w-5 w-3 my-auto md:ml-2" />
                 </div>
               )}
             </div>
             <div className="mx-auto">
               <Link href="/">
-                <h1 className="md:text-4xl text-2xl select-none font-bold cursor-pointer font-gilroy tracking-widest text-white px-2 rounded-md py-1 bg-black hover:bg-[#303030]">
+                {/* <h1 className="md:text-4xl text-2xl select-none font-bold cursor-pointer font-gilroy tracking-widest text-white px-2 rounded-md py-1 bg-black hover:bg-[#303030]">
                   WEB3SG
-                </h1>
+                </h1> */}
+                <Image
+                  src="/images/Logo.png"
+                  alt="logo"
+                  width={"190"}
+                  height={"50"}
+                  className="flex"
+                />
               </Link>
             </div>
           </div>
-          <div className="mx-auto flex mt-3 mb-1 sm:w-[500px] w-3/4 place-content-between font-bold text-sm sm:text-lg">
+          <div className="mx-auto flex mt-3 mb-1 sm:w-[500px] place-content-between font-bold text-sm sm:text-lg">
             <Link className="cursor-pointer" href="/">
               <motion.div className="cursor-pointer rounded-lg px-3 py-1 hover:bg-[#7b7b7b15]">
                 <h1>Home</h1>
