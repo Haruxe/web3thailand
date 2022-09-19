@@ -58,12 +58,13 @@ function MyApp({ Component }: AppProps) {
   return (
     <>
       <Head>
-        <meta property="og:title" content="Web3SG" />
+        <meta property="og:title" content="Web3SG" key="ogtitle" />
         <meta
           property="og:description"
           content="Bridging web2 to web3 one step at a time."
+          key="ogdesc"
         />
-        <meta property="og:image" content="/web3sg.png" />
+        <meta property="og:image" content="/coverpicture.png" key="ogimage" />
         <title>Web3SG</title>
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
