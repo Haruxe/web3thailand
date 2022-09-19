@@ -64,7 +64,11 @@ function MyApp({ Component }: AppProps) {
           content="Bridging web2 to web3 one step at a time."
           key="ogdesc"
         />
-        <meta property="og:image" content="/coverpicture.png" key="ogimage" />
+        <meta
+          property="og:image"
+          content="https://i.imgur.com/rXxdwMg.png"
+          key="ogimage"
+        />
         <title>Web3SG</title>
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
