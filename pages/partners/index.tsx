@@ -73,7 +73,7 @@ function index({ signer }) {
             <div className="flex flex-col w-full md:w-1/2">
               <h1 className="text-3xl font-bold">Web3 Partners</h1>
               <div className="h-[2px] bg-black w-10 my-5" />
-              <div className="grid gap-3 md:gap-5 grid-flow-col md:grid-rows-3 grid-rows-5">
+              <div className="grid gap-5 grid-flow-col md:grid-rows-3 grid-rows-5">
                 <FeaturedCollabPanel
                   url="https://opensea.io/collection/kaiju-kingz"
                   image="KaijuKingz.png"
@@ -130,8 +130,8 @@ function index({ signer }) {
                   url="https://opensea.io/collection/zombieclub-token"
                   image="zombie.avif"
                 />
-                <div className="w-[7rem] h-[7rem] relative place-content-center flex">
-                  <h1 className="m-auto flex text-3xl font-gilroy-black font-black select-none">
+                <div className="w-[5rem] h-[5rem] md:h-[7rem] md:w-[7rem] relative place-content-center flex">
+                  <h1 className="m-auto flex text-xl md:text-3xl font-gilroy-black font-black select-none">
                     +300
                   </h1>
                 </div>
