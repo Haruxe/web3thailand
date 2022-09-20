@@ -5,8 +5,9 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { DiscordAlt } from "styled-icons/boxicons-logos";
 import Image from "next/image";
+import { SignOut } from "styled-icons/fluentui-system-filled";
 // @ts-ignore
-function Navbar({ connected, address, connectHandler }) {
+function Navbar({ connected, address, connectHandler, disconnectHandler }) {
   return (
     <>
       <nav className="mx-auto p-2 fixed right-0 left-0 bg-[#ffffff] backdrop-blur-xl bg-opacity-70 z-20">
@@ -54,11 +55,16 @@ function Navbar({ connected, address, connectHandler }) {
                         address.substring(address.length, address.length - 4)
                       : ""}
                   </h1>
-                  <Check className="md:w-5 w-3 my-auto md:ml-2" />
+                  <button
+                    className="cursor-pointer place-content-center m-auto md:ml-2 md:w-5 w-3 "
+                    onClick={disconnectHandler}
+                  >
+                    <SignOut className="my-auto" />
+                  </button>
                 </div>
               )}
             </div>
-            <div className="mx-auto">
+            <div className="mx-auto cursor-pointer w-[8rem] md:w-[12rem] my-auto pt-1">
               <Link href="/">
                 {/* <h1 className="md:text-4xl text-2xl select-none font-bold cursor-pointer font-gilroy tracking-widest text-white px-2 rounded-md py-1 bg-black hover:bg-[#303030]">
                   WEB3SG
@@ -66,8 +72,8 @@ function Navbar({ connected, address, connectHandler }) {
                 <Image
                   src="/images/Logo.png"
                   alt="logo"
-                  width={"190"}
-                  height={"50"}
+                  width={"2149"}
+                  height={"581"}
                   className="flex"
                 />
               </Link>
@@ -94,11 +100,11 @@ function Navbar({ connected, address, connectHandler }) {
                 <h1>Partners</h1>
               </motion.div>
             </Link>
-            {/* <Link className="cursor-pointer" href="/join">
+            <Link className="cursor-pointer" href="/events">
               <motion.div className="cursor-pointer rounded-lg px-3 py-1 hover:bg-[#7b7b7b15]">
-                <h1>Join Us</h1>
+                <h1>Events</h1>
               </motion.div>
-            </Link> */}
+            </Link>
           </div>
         </div>
       </nav>

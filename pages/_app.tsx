@@ -50,6 +50,11 @@ function MyApp({ Component }: AppProps) {
     }
   }
 
+  async function disconnectHandler() {
+    setAddress("");
+    setIsConnected(false);
+  }
+
   useEffect(() => {
     // @ts-ignore
     connectHandler();
@@ -81,6 +86,7 @@ function MyApp({ Component }: AppProps) {
         connected={isConnected}
         address={address}
         connectHandler={connectHandler}
+        disconnectHandler={disconnectHandler}
       />
       <Component />
       <Footer />

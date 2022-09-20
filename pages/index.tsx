@@ -107,6 +107,37 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
+        <div className="bg-white my-auto flex max-w-[1400px] mx-auto">
+          <div className="py-10 md:px-6 place-content-center mx-auto text-black">
+            <h1 className=" text-3xl mx-auto text-center font-gilroy-bold">
+              Our Values
+            </h1>
+            <div className="h-[2px] bg-black w-[10rem] mx-auto my-6" />
+            <div className="mx-auto flex text-white place-content-center">
+              <div className="grid grid-flow-row md:grid-flow-col gap-5 md:px-0 px-6 place-content-between font-gilroy md:text-lg text-md ">
+                <div className="bg-black md:p-6 p-4 mx-auto place-content-center place-items-center grid space-y-5 max-w-[500px]">
+                  <h1 className="md:text-2xl text-xl font-gilroy-bold">
+                    Vision
+                  </h1>
+                  <p className="text-center">
+                    Our vision is to deliver true blue web3 events and projects
+                    to make bridging the gap to web3 seamless while making an
+                    impact.
+                  </p>
+                </div>
+                <div className="bg-black md:p-6 p-4 mx-auto place-content-center place-items-center grid space-y-5 max-w-[500px]">
+                  <h1 className="md:text-2xl text-xl font-gilroy-bold">
+                    Mission
+                  </h1>
+                  <p className="text-center">
+                    Our mission is to build web2 businesses on web3 communities
+                    with sustainable infastructure and ideals.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
