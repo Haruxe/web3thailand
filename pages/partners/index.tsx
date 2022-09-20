@@ -140,7 +140,7 @@ function index({ signer }) {
             <div className="flex flex-col w-full">
               <h1 className="text-3xl font-bold">All Partners</h1>
               <div className="h-[2px] bg-black w-10 my-5" />
-              <div className="grid gap-10 grid-flow-col">
+              <div className="grid md:gap-10 md:grid-flow-col grid-flow-row">
                 <p>
                   Fuzzy Felons
                   <br />
