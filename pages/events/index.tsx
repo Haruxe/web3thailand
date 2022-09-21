@@ -3,7 +3,7 @@ import React from "react";
 
 function index() {
   return (
-    <div className="md:my-[8rem] place-content-center flex flex-col">
+    <div className="md:my-[2rem] place-content-center flex flex-col">
       <div className="mx-auto my-auto flex">
         <div className="mx-auto flex flex-col">
           <div className="max-w-[1400px] p-6 text-black flex flex-col md:flex-row mx-auto md:space-x-5 place-content-between">
@@ -37,10 +37,43 @@ function index() {
                 for every event.
               </p>
             </div> */}
-            <div className="flex flex-col w-full my-8">
-              <h1 className="text-3xl font-bold">Events</h1>
-              <div className="h-[2px] bg-black w-10 my-5" />
-              Coming soon
+            <div className="grid gap-10 grid-flow-row lg:grid-cols-2 w-full max-w-[1400px] my-8 ">
+              <div className="flex flex-col w-1/2">
+                <h1 className="text-3xl font-bold">Kaiju Dinner 2022</h1>
+                <div className="h-[2px] bg-black w-10 my-5" />
+                <iframe
+                  className="sm:w-[560px] sm:h-[315px] w-[400px] h-[200px]"
+                  src="https://www.youtube-nocookie.com/embed/ly_eAhTiq1M"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div>
+                <h1 className="text-3xl font-bold">COMEX 2022</h1>
+                <div className="h-[2px] bg-black w-10 my-5" />
+                <iframe
+                  className="sm:w-[560px] sm:h-[315px] w-[400px] h-[200px]"
+                  src="https://www.youtube-nocookie.com/embed/JF5D7OLp-Fg"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div>
+                <h1 className="text-3xl font-bold">ARTNOW</h1>
+                <div className="h-[2px] bg-black w-10 my-5" />
+                <iframe
+                  className="sm:w-[560px] sm:h-[315px] w-[400px] h-[200px]"
+                  src="https://www.youtube-nocookie.com/embed/5nzZjfdwb3o"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>

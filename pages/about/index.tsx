@@ -128,26 +128,34 @@ function index() {
               <h1 className="text-3xl font-bold">Meet The Founders</h1>
               <div className="h-[2px] bg-black w-10 my-5" />
               <p>
-                Web3SG was formed with the aim to provide support and technical
-                infrastructure to enable both established projects as well those
-                within the process of launching to efficiently carry out their
-                plans whether it be partnership selection, Full stack
-                development, tokenomics, or branding.
-                <br /> <br /> We want to make the NFT space one that is thriving
-                with legitimacy. One that does not solely revolve around ideals
-                and promises, but one that delivers in both the good times and
-                bad. A core focus of ours is to enable Web2 companies to
-                integrate and break through the Web3 space.
-                <br />
-                <br /> The NFT and Crypto markets are sensitive and skeptical of
-                large conglomerates entering the space who bring their
-                traditional strategies here, however we believe for this space
-                to truly grow we have to enable these successful traditional
-                business models to establish themselves within our ecosystem.{" "}
+                Prior to setting up Web3SG, Jimmy and Lees ran a traditional
+                web2 company known as{" "}
+                <a
+                  className="font-gilroy-black font-bold cursor-pointer text-green-700"
+                  href="https://www.aceninja.sg/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Aceninja Pte Ltd.
+                </a>{" "}
                 <br />
                 <br />
-                We want to be the bridge for these companies within Web2 to
-                enter the space with ease.
+                The company offered a wide range of products and services, such
+                as Outsourcing, Procurement, Education, T-shirts, EcoFriendly
+                products etc. <br />
+                <br />
+                As of September 2022, the company has worked with multiple
+                clients in Singapore and beyond, such as the Singapore Armed
+                Forces (SAF), Sengkang General Hospital, ST Engineering,
+                Sandvik, Church & Dwight, etc.
+                <br />
+                <br />
+                The company has since gone on to win multiple distinguished
+                awards, such as the top 500 Small and Medium Sized Enterprises
+                (500 SME) award, and the Top 100 Entrepreneurs in Singapore
+                award.
+                <br />
+                <br />
               </p>
             </div>
           </div>
@@ -155,10 +163,10 @@ function index() {
       </div>
       <div className="bg-white my-auto flex">
         <div className="py-10 md:px-6 place-content-center mx-auto text-black">
-          {/* <h1 className=" text-3xl mx-auto text-center font-gilroy-bold">
-            Experience
+          <h1 className=" text-3xl mx-auto text-center font-gilroy font-bold">
+            Web3SG Offers
           </h1>
-          <div className="h-[2px] bg-black w-[10rem] mx-auto my-6" /> */}
+          <div className="h-[2px] bg-black w-[10rem] mx-auto my-6" />
           <div className="mx-auto flex text-white place-content-center">
             <div className="flex md:flex-row flex-col place-content-between md:space-x-5 md:space-y-0 space-y-10 font-gilroy-bold md:text-lg text-md">
               <div className="bg-black md:p-6 p-4 mx-auto place-content-center place-items-center flex flex-col space-y-10">
