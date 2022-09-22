@@ -16,7 +16,7 @@ function index() {
                 className="flex mx-auto rounded-sm"
               />
               <h1 className="absolute bottom-5 right-5 font-bold text-md md:text-2xl bg-opacity-40 backdrop-blur-2xl text-black bg-white shadow-3xl px-2 py-1 rounded-md font-righteous">
-                Our Amazing Community - COMEX 2022
+                Web3SG Team - COMEX 2022
               </h1>
             </div>
             <div className="flex md:flex-row flex-col">
@@ -157,7 +157,7 @@ function index() {
       <div className="bg-white my-auto flex">
         <div className="py-10 md:px-6 place-content-center mx-auto text-black">
           <h1 className=" text-3xl mx-auto text-center font-gilroy font-bold">
-            Web3SG Offers
+            Web3SG Statistics
           </h1>
           <div className="h-[2px] bg-black w-[10rem] mx-auto my-6" />
           <div className="mx-auto flex text-white place-content-center">
