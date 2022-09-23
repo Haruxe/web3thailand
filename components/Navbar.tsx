@@ -85,9 +85,9 @@ function Navbar({ connected, address, connectHandler, disconnectHandler }) {
                 <h1>Home</h1>
               </motion.div>
             </Link>
-            <Link className="cursor-pointer" href="/pass">
+            <Link className="cursor-pointer" href="/genesis">
               <motion.div className="cursor-pointer rounded-lg px-3 py-1 hover:bg-[#7b7b7b15]">
-                <h1>SG Pass</h1>{" "}
+                <h1>Genesis Pass</h1>{" "}
               </motion.div>
             </Link>
             <Link className="cursor-pointer" href="/about">

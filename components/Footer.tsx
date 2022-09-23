@@ -42,7 +42,7 @@ function Footer() {
 
             <div className="flex flex-col font-gilroy md:text-md text-sm underline space-y-2 mt-3">
               <Link href="/">Home</Link>
-              <Link href="/pass">Pass</Link>
+              <Link href="/genesis">Genesis Pass</Link>
               <Link href="/about">About</Link>
               {/* <Link href="/join">Join Us</Link> */}
             </div>

@@ -82,8 +82,9 @@ const Home: NextPage = () => {
                     />
                   </div>
                   <p className="text-center">
-                    Web3SG hosted Singapore&apos;s most successful NFT community
-                    gathering for the Kaiju Kingz community.
+                    Web3SG hosted Singapore&apos;s first community gathering for
+                    the Kaiju Kingz community, which paved the way for community
+                    building.
                   </p>
                 </div>
                 <div className="bg-black p-6 mx-auto place-content-center place-items-center flex flex-col space-y-10">
@@ -120,9 +121,8 @@ const Home: NextPage = () => {
                     Vision
                   </h1>
                   <p className="text-center">
-                    Our vision is to deliver true blue web3 events and projects
-                    to make bridging the gap to web3 seamless while making an
-                    impact.
+                    Inspire and build side by side with project teams to create
+                    exciting innovative quality products and projects in Web3.
                   </p>
                 </div>
                 <div className="bg-black md:p-6 p-4 mx-auto place-content-center place-items-center grid space-y-5 max-w-[500px]">
@@ -130,8 +130,8 @@ const Home: NextPage = () => {
                     Mission
                   </h1>
                   <p className="text-center">
-                    Our mission is to build web2 businesses on web3 communities
-                    with sustainable infastructure and ideals.
+                    Our mission is to build sustainable web2 businesses on web3
+                    infrastructure, communities, and ideals.
                   </p>
                 </div>
               </div>
