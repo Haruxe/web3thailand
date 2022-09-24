@@ -1,33 +1,52 @@
 import { ethers, getDefaultProvider, Signer } from "ethers";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { DiscordAlt } from "styled-icons/boxicons-logos";
 import { Twitter } from "styled-icons/remix-fill";
 import ClipLoader from "react-spinners/ClipLoader";
 import detectEthereumProvider from "@metamask/detect-provider";
 
 // @ts-ignore
-function Index() {
+function Index({ address }) {
   const [loading, setLoading] = useState(false);
-  // NOT REAL ADDRESS!
-  const contractAddress = "0x1775b7ae0180d917FDC57d64810E2Fe4887B22c5";
-  const abi = ["function mint()"];
-
+  const [mintedAmount, setMintedAmount] = useState(0);
   // Function that handles minting
   async function mintHandler() {
-    const provider = new ethers.providers.JsonRpcProvider();
-    const signer = provider.getSigner();
+    const contractAddress = "0xbe9E70364091378B523214995DdF6f6fC417F8D7";
     // @ts-ignore
     if (typeof window.ethereum !== "undefined") {
       setLoading(true);
-      const contract = new ethers.Contract(contractAddress, abi, signer);
       try {
-        await contract.mint();
+        // @ts-ignore
+        await window.ethereum.request({
+          method: "eth_sendTransaction",
+          params: [
+            {
+              to: contractAddress,
+              from: address,
+              data: "375a069a0000000000000000000000000000000000000000000000000000000000000001",
+            },
+          ],
+        });
       } catch (e) {
         console.log(e);
       }
       setLoading(false);
     }
+  }
+
+  useEffect(() => {
+    getBalance();
+  }, []);
+
+  async function getBalance() {
+    const contractAddress = "0xbe9E70364091378B523214995DdF6f6fC417F8D7";
+    // @ts-ignore
+    const balance = await window.ethereum.request({
+      method: "eth_sendTransaction",
+      params: [{ to: contractAddress, data: "f9654a91" }],
+    });
+    setMintedAmount(balance);
   }
 
   return (
@@ -104,7 +123,7 @@ function Index() {
                 .
               </p>
               <div className="mt-10 space-y-5">
-                <h1>Current Supply: 0/333</h1>
+                <h1>Current Supply: {mintedAmount}/333</h1>
 
                 <div>
                   <button

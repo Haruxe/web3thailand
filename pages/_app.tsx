@@ -25,12 +25,14 @@ function MyApp({ Component }: AppProps) {
         const chainId = await provider.request({
           method: "eth_chainId",
         });
-        if (chainId !== "0x1") {
+        //CHANGE TO 0x1 FOR PRODUCTION
+        if (chainId !== "0x5") {
           console.log("Connect To Mainnet!");
           // @ts-ignore
           const success = await provider.request({
             method: "wallet_switchEthereumChain",
-            params: [{ chainId: "0x1" }],
+            //CHANGE TO 0x1 FOR PRODUCTION
+            params: [{ chainId: "0x5" }],
           });
           if (success == null) {
             connectHandler();
@@ -88,7 +90,7 @@ function MyApp({ Component }: AppProps) {
         connectHandler={connectHandler}
         disconnectHandler={disconnectHandler}
       />
-      <Component />
+      <Component address={address} />
       <Footer />
     </>
   );
