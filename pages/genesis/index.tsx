@@ -50,7 +50,7 @@ function Index({ address }) {
   }
 
   return (
-    <div className="md:my-[14rem] place-content-center flex flex-col">
+    <div className="md:my-[16rem] my-[5rem] place-content-center flex flex-col">
       <div className="mx-auto my-auto flex">
         <div className="mx-auto flex">
           <div className="max-w-[1400px] p-6 text-black grid md:grid-flow-col gap-5 mx-auto md:space-x-5 place-content-center">
@@ -140,8 +140,8 @@ function Index({ address }) {
                 </div>
               </div> */}
             </div>
-            <div className="bg-black mx-auto my-auto p-1 rounded-sm">
-              <div className="relative place-content-center flex md:w-[500px] w-[500px] mx-auto my-auto">
+            <div className="bg-black mx-auto my-auto p-1 rounded-sm flex">
+              <div className="relative place-content-center flex md:w-[500px] w-[300px] mx-auto my-auto">
                 <Image
                   src={"/images/genesisPass.gif"}
                   alt={"placeholder"}
