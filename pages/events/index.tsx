@@ -38,11 +38,11 @@ function index() {
               </p>
             </div> */}
             <div className="grid gap-10 grid-flow-row lg:grid-cols-2 w-full max-w-[1400px] my-8 ">
-              <div className="flex flex-col w-1/2">
+              <div className="flex flex-col">
                 <h1 className="text-3xl font-bold">Kaiju Dinner 2022</h1>
                 <div className="h-[2px] bg-black w-10 my-5" />
                 <iframe
-                  className="sm:w-[560px] sm:h-[315px] w-[400px] h-[200px]"
+                  className="sm:w-[630px] sm:h-[315px] w-[320px] h-[160px]"
                   src="https://www.youtube-nocookie.com/embed/ly_eAhTiq1M"
                   title="YouTube video player"
                   frameBorder="0"
@@ -54,7 +54,7 @@ function index() {
                 <h1 className="text-3xl font-bold">COMEX 2022</h1>
                 <div className="h-[2px] bg-black w-10 my-5" />
                 <iframe
-                  className="sm:w-[560px] sm:h-[315px] w-[400px] h-[200px]"
+                  className="sm:w-[630px] sm:h-[315px] w-[320px] h-[160px]"
                   src="https://www.youtube-nocookie.com/embed/JF5D7OLp-Fg"
                   title="YouTube video player"
                   frameBorder="0"
@@ -66,7 +66,7 @@ function index() {
                 <h1 className="text-3xl font-bold">ARTNOW</h1>
                 <div className="h-[2px] bg-black w-10 my-5" />
                 <iframe
-                  className="sm:w-[560px] sm:h-[315px] w-[400px] h-[200px]"
+                  className="sm:w-[630px] sm:h-[315px] w-[320px] h-[160px]"
                   src="https://www.youtube-nocookie.com/embed/5nzZjfdwb3o"
                   title="YouTube video player"
                   frameBorder="0"
