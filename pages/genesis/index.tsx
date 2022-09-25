@@ -122,7 +122,7 @@ function Index({ address }) {
                 </a>
                 .
               </p>
-              <div className="mt-10 space-y-5">
+              {/* <div className="mt-10 space-y-5">
                 <h1>Current Supply: {mintedAmount}/333</h1>
 
                 <div>
@@ -138,7 +138,7 @@ function Index({ address }) {
                     <h1>Mint Pass</h1>
                   </button>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="bg-black mx-auto my-auto p-1 rounded-sm">
               <div className="relative place-content-center flex md:w-[500px] w-[500px] mx-auto my-auto">

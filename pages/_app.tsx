@@ -26,13 +26,13 @@ function MyApp({ Component }: AppProps) {
           method: "eth_chainId",
         });
         //CHANGE TO 0x1 FOR PRODUCTION
-        if (chainId !== "0x5") {
+        if (chainId !== "0x1") {
           console.log("Connect To Mainnet!");
           // @ts-ignore
           const success = await provider.request({
             method: "wallet_switchEthereumChain",
             //CHANGE TO 0x1 FOR PRODUCTION
-            params: [{ chainId: "0x5" }],
+            params: [{ chainId: "0x1" }],
           });
           if (success == null) {
             connectHandler();
