@@ -495,7 +495,7 @@ function Index({ address }) {
                 </a>
                 .
               </p>
-              <div className="mt-10 space-y-5">
+              {/* <div className="mt-10 space-y-5">
                 <h1>
                   {mintedAmount < 333
                     ? "Current Minted: " + mintedAmount + "/333"
@@ -526,7 +526,7 @@ function Index({ address }) {
                     </button>
                   )}
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="bg-black mx-auto my-auto p-1 rounded-sm flex">
               <div className="relative place-content-center flex md:w-[500px] w-[300px] mx-auto my-auto">
