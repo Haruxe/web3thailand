@@ -111,10 +111,6 @@ function index({ signer }) {
                   image="paralax.avif"
                 />
                 <FeaturedCollabPanel
-                  url="https://opensea.io/collection/kazoku"
-                  image="kazoku.avif"
-                />
-                <FeaturedCollabPanel
                   url="https://opensea.io/collection/kumaverse"
                   image="kuma.avif"
                 />
