@@ -3,9 +3,9 @@ import type { AppProps } from "next/app";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Head from "next/head";
-import Script from "next/script";
 import { useEffect, useState } from "react";
 import detectEthereumProvider from "@metamask/detect-provider";
+import { ethers } from "ethers";
 
 function MyApp({ Component }: AppProps) {
   const [isConnected, setIsConnected] = useState(false);
@@ -79,11 +79,6 @@ function MyApp({ Component }: AppProps) {
         <title>Web3SG</title>
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
-      <Script
-        src="https://cdn.ethers.io/scripts/ethers-v3.min.js"
-        charSet="utf-8"
-        type="text/javascript"
-      ></Script>
       <Navbar
         connected={isConnected}
         address={address}

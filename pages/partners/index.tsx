@@ -87,11 +87,11 @@ function index({ signer }) {
                   image="imaginary.avif"
                 />
                 <FeaturedCollabPanel
-                  url="https://opensea.io/collection/godjira-genesis"
+                  url="https://opensea.io/category/pg"
                   image="godjira.gif"
                 />
                 <FeaturedCollabPanel
-                  url="https://opensea.io/collection/isekaii-meta"
+                  url="https://opensea.io/collection/projectisekaimeta"
                   image="isekaii.avif"
                 />
                 <FeaturedCollabPanel
@@ -117,10 +117,6 @@ function index({ signer }) {
                 <FeaturedCollabPanel
                   url="https://opensea.io/collection/kumaverse"
                   image="kuma.avif"
-                />
-                <FeaturedCollabPanel
-                  url="https://opensea.io/collection/ukiyonft"
-                  image="ukiyo.avif"
                 />
                 <FeaturedCollabPanel
                   url="https://opensea.io/collection/generativedungeon"

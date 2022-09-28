@@ -130,7 +130,7 @@ const Home: NextPage = () => {
                     Mission
                   </h1>
                   <p className="text-center">
-                    Our mission is to build sustainable web2 businesses on web3
+                    Our mission is to build sustainable Web2 businesses on Web3
                     infrastructure, communities, and ideals.
                   </p>
                 </div>
