@@ -76,7 +76,7 @@ function MyApp({ Component }: AppProps) {
           content="https://i.imgur.com/rXxdwMg.png"
           key="ogimage"
         />
-        <title>Web3SG</title>
+        <title>Web3Thailand</title>
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
       <Navbar

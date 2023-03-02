@@ -3,9 +3,10 @@ import { Email } from "styled-icons/evaicons-solid";
 import { Check, Twitter } from "styled-icons/remix-fill";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { DiscordAlt } from "styled-icons/boxicons-logos";
+import { DiscordAlt, FacebookCircle } from "styled-icons/boxicons-logos";
 import Image from "next/image";
 import { SignOut } from "styled-icons/fluentui-system-filled";
+import { slide as Menu } from "react-burger-menu";
 // @ts-ignore
 function Navbar({ connected, address, connectHandler, disconnectHandler }) {
   return (
@@ -34,6 +35,13 @@ function Navbar({ connected, address, connectHandler, disconnectHandler }) {
                 rel="noreferrer"
               >
                 <DiscordAlt className="w-5" />
+              </a>
+              <a
+                href="https://discord.gg/web3sg"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FacebookCircle className="w-5" />
               </a>
             </div>
             <div className="absolute top-2 right-2 space-x-3 my-auto md:text-sm text-xs ">
@@ -64,7 +72,7 @@ function Navbar({ connected, address, connectHandler, disconnectHandler }) {
                 </div>
               )}
             </div>
-            <div className="mx-auto cursor-pointer w-[8rem] md:w-[12rem] my-auto pt-1">
+            <div className="mx-auto cursor-pointer w-[12rem] md:w-[16rem] my-auto pt-1">
               <Link href="/">
                 {/* <h1 className="md:text-4xl text-2xl select-none font-bold cursor-pointer font-gilroy tracking-widest text-white px-2 rounded-md py-1 bg-black hover:bg-[#303030]">
                   WEB3SG
@@ -72,14 +80,14 @@ function Navbar({ connected, address, connectHandler, disconnectHandler }) {
                 <Image
                   src="/images/Logo.png"
                   alt="logo"
-                  width={"2149"}
-                  height={"581"}
+                  width={"3096"}
+                  height={"516"}
                   className="flex"
                 />
               </Link>
             </div>
           </div>
-          <div className="mx-auto flex mt-3 mb-1 sm:w-[500px] place-content-between font-bold text-sm sm:text-lg">
+          <div className="mx-auto flex mt-3 mb-1 sm:w-[800px] place-content-between font-bold text-sm sm:text-lg">
             <Link className="cursor-pointer" href="/">
               <motion.div className="cursor-pointer rounded-lg px-3 py-1 hover:bg-[#7b7b7b15]">
                 <h1>Home</h1>
@@ -88,6 +96,11 @@ function Navbar({ connected, address, connectHandler, disconnectHandler }) {
             <Link className="cursor-pointer" href="/genesis">
               <motion.div className="cursor-pointer rounded-lg px-3 py-1 hover:bg-[#7b7b7b15]">
                 <h1>Genesis Pass</h1>{" "}
+              </motion.div>
+            </Link>
+            <Link className="cursor-pointer" href="/application">
+              <motion.div className="cursor-pointer rounded-lg px-3 py-1 hover:bg-[#7b7b7b15]">
+                <h1>Application</h1>{" "}
               </motion.div>
             </Link>
             <Link className="cursor-pointer" href="/about">

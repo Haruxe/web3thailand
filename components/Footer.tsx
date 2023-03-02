@@ -25,8 +25,8 @@ function Footer() {
               <Image
                 src="/images/LogoWhite.png"
                 alt="logo"
-                width={"190"}
-                height={"50"}
+                width={"240"}
+                height={"40"}
                 layout="fixed"
               />
             </Link>
