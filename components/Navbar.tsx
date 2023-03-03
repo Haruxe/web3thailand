@@ -6,7 +6,7 @@ import Link from "next/link";
 import { DiscordAlt, FacebookCircle } from "styled-icons/boxicons-logos";
 import Image from "next/image";
 import { SignOut } from "styled-icons/fluentui-system-filled";
-import { slide as Menu } from "react-burger-menu";
+//import { slide as Menu } from "react-burger-menu";
 // @ts-ignore
 function Navbar({ connected, address, connectHandler, disconnectHandler }) {
   return (
