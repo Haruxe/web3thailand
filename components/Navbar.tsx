@@ -41,7 +41,7 @@ function Navbar({ connected, address, connectHandler, disconnectHandler }) {
                 <DiscordAlt className="w-5" />
               </a>
               <a
-                href="https://discord.gg/web3sg"
+                href="https://www.facebook.com/Web3Thailand"
                 target="_blank"
                 rel="noreferrer"
               >

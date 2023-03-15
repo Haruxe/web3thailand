@@ -23,6 +23,7 @@ function Index({ address }) {
             <h1 className="text-black text-5xl font-bold my-5 mx-auto">
               Application
             </h1>
+            <div className="h-[2px] bg-black w-10 my-5" />
             <p className="my-8 md:w-2/3">
               We welcome you to apply to be a member of the Web3 Thailand. A
               networking pass to empower communities. We&apos;re creating
@@ -45,6 +46,18 @@ function Index({ address }) {
               6) Hackathons where members can choose to vote on the best
               business idea that will have the best chance of success
             </p>
+            <h1 className="text-black text-2xl font-bold my-5 mx-auto">
+              Join The Web3Thailand Line Group!
+            </h1>
+            <div className="mx-auto w-full place-content-center">
+              <Image
+                src={"/images/QR.jpg"}
+                width="200"
+                height="200"
+                alt="QR Code Line"
+                className="mx-auto flex w-full"
+              />
+            </div>
             <div className="flex flex-col w-full mx-auto">
               <form
                 action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeaBZ5z4jA3N6RVG5eVW_DCxjdP5Askgkd7biwkL4j9S-RKFg/formResponse"
