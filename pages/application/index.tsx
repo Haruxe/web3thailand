@@ -25,7 +25,7 @@ function Index({ address }) {
             </h1>
             <p className="my-8 md:w-2/3">
               We welcome you to apply to be a member of the Web3 Thailand. A
-              networking pass to empower communities. We're creating
+              networking pass to empower communities. We&apos;re creating
               community-centric products that connect collectors, and activate
               creative entrepreneurship. Built by web3sg with Thai partners. A
               small supply (yet to be confirmed) will be released. This token
