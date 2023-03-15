@@ -5,12 +5,14 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { DiscordAlt, FacebookCircle } from "styled-icons/boxicons-logos";
 import Image from "next/image";
-import { SignOut } from "styled-icons/fluentui-system-filled";
+import { LineStyle, SignOut } from "styled-icons/fluentui-system-filled";
+import { Burger } from "styled-icons/fa-solid";
+import { List } from "styled-icons/bootstrap";
 //import { slide as Menu } from "react-burger-menu";
 // @ts-ignore
 function Navbar({ connected, address, connectHandler, disconnectHandler }) {
   const [isOpen, setIsOpen] = useState(false);
-  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
+
   return (
     <>
       <nav className="mx-auto p-2 fixed right-0 left-0 bg-[#ffffff] backdrop-blur-xl bg-opacity-70 z-20">
@@ -48,13 +50,14 @@ function Navbar({ connected, address, connectHandler, disconnectHandler }) {
             </div>
             <div className="absolute top-2 left-2 space-x-3 my-auto flex sm:hidden">
               <button
-                className="h-8 w-8 my-auto border-2 border-black rounded flex flex-col justify-center items-center group"
+                className="h-8 w-8 my-auto rounded flex flex-col justify-center items-center group"
                 onClick={() => setIsOpen(!isOpen)}
-              ></button>
+              >
+                <List />
+              </button>
             </div>
-            < />
 
-            <div className="absolute top-2 right-2 space-x-3 my-auto md:text-sm text-sm invisible sm:visible">
+            {/* <div className="absolute top-2 right-2 space-x-3 my-auto md:text-sm text-sm invisible sm:visible">
               {!connected ? (
                 <button
                   className="select-none font-bold cursor-pointer font-gilroy-bold tracking-widest text-white px-2 rounded-sm py-1 bg-blue-500"
@@ -81,7 +84,7 @@ function Navbar({ connected, address, connectHandler, disconnectHandler }) {
                   </button>
                 </div>
               )}
-            </div>
+            </div> */}
 
             <div className="mx-auto cursor-pointer w-[12rem] md:w-[16rem] my-auto pt-1">
               <Link href="/">
@@ -99,7 +102,7 @@ function Navbar({ connected, address, connectHandler, disconnectHandler }) {
             </div>
           </div>
 
-          <div className="mx-auto mt-3 mb-1 md:w-[800px] place-content-between font-bold text-sm sm:text-lg hidden sm:flex">
+          <div className="mx-auto mt-3 mb-1 md:w-[800px] place-content-between font-bold text-sm sm:text-lg hidden sm:flex ">
             <Link className="cursor-pointer" href="/">
               <motion.div className="cursor-pointer rounded-lg px-3 py-1 hover:bg-[#7b7b7b15]">
                 <h1>Home</h1>
@@ -134,7 +137,7 @@ function Navbar({ connected, address, connectHandler, disconnectHandler }) {
         </div>
         {isOpen && (
           <motion.div
-            className="font-bold space-y-3 p-2 mt-3"
+            className="font-bold space-y-3 p-2 mt-3 grid sm:hidden"
             animate={{ x: 1 }}
             initial={{ x: -40 }}
             transition={{ duration: 0.4 }}

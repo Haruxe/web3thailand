@@ -59,7 +59,7 @@ function MyApp({ Component }: AppProps) {
 
   useEffect(() => {
     // @ts-ignore
-    connectHandler();
+    //connectHandler();
   }, []);
 
   return (
