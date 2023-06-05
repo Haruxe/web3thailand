@@ -74,6 +74,18 @@ function index() {
                   allowFullScreen
                 ></iframe>
               </div>
+              <div>
+                <h1 className="text-3xl font-bold">Live Mint</h1>
+                <div className="h-[2px] bg-black w-10 my-5" />
+                <iframe
+                  className="sm:w-[630px] sm:h-[315px] w-[320px] h-[160px]"
+                  src="https://www.youtube-nocookie.com/embed/SyHYOvdnHns"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>

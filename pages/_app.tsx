@@ -65,7 +65,7 @@ function MyApp({ Component }: AppProps) {
   return (
     <>
       <Head>
-        <meta property="og:title" content="Web3SG" key="ogtitle" />
+        <meta property="og:title" content="Web3Thailand" key="ogtitle" />
         <meta
           property="og:description"
           content="Bridging web2 to web3 one step at a time."
