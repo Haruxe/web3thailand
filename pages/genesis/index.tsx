@@ -458,43 +458,89 @@ function Index({ address }) {
               </p>
             </div> */}
             <div className="flex flex-col w-full my-8">
-              <h1 className="text-3xl font-bold">Web3SG Genesis Pass</h1>
-              <div className="h-[2px] bg-black w-10 my-5" />
-              <p>
-                The Web3SG Genesis Collection is a collection of 333 NFT passes
-                that give its holders exclusive rights and access to a plethora
-                of networking opportunities, funding, and decision-making within
-                the WEB3SG community.
-                <br />
-                <br />
-                The pass will be <u>free</u> to mint, and will be first
-                available to outstanding members of the community - then if
-                supply allows, it will be available to the public.
-                <br />
-                <br />
-                Mint date is still{" "}
-                <span className="font-gilroy-black font-bold">TBA</span>, so be
-                sure to follow Web3SG on{" "}
-                <a
-                  className="font-gilroy-black font-bold cursor-pointer text-blue-500"
-                  href="https://twitter.com/web3sg"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Twitter className="w-4" /> Twitter
-                </a>{" "}
-                and join the{" "}
-                <a
-                  className="font-gilroy-black font-bold cursor-pointer text-[#5865F2]"
-                  href="https://discord.gg/web3sg"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <DiscordAlt className="w-4 mr-[5px]" />
-                  Discord
-                </a>
-                .
-              </p>
+              <div>
+                <h1 className="text-3xl font-bold">Web3SG Genesis Pass</h1>
+                <div className="h-[2px] bg-black w-10 my-5" />
+                <p>
+                  The Web3SG Genesis Collection is a collection of 333 NFT
+                  passes that give its holders exclusive rights and access to a
+                  plethora of networking opportunities, funding, and
+                  decision-making within the WEB3SG community.
+                  <br />
+                  <br />
+                  The pass will be <u>free</u> to mint, and will be first
+                  available to outstanding members of the community - then if
+                  supply allows, it will be available to the public.
+                  <br />
+                  <br />
+                  Mint date is still{" "}
+                  <span className="font-gilroy-black font-bold">TBA</span>, so
+                  be sure to follow Web3SG on{" "}
+                  <a
+                    className="font-gilroy-black font-bold cursor-pointer text-blue-500"
+                    href="https://twitter.com/web3sg"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Twitter className="w-4" /> Twitter
+                  </a>{" "}
+                  and join the{" "}
+                  <a
+                    className="font-gilroy-black font-bold cursor-pointer text-[#5865F2]"
+                    href="https://discord.gg/web3sg"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <DiscordAlt className="w-4 mr-[5px]" />
+                    Discord
+                  </a>
+                  .
+                </p>
+              </div>
+              <div className="mt-20">
+                <h1 className="text-3xl font-bold">Web3Thailand Pass</h1>
+                <div className="h-[2px] bg-black w-10 my-5" />
+                <p>
+                  The Web3Thailand Genesis Collection is a collection of 500 NFT
+                  Passes on KUB Chain that gives its holders exclusive rights
+                  and access to a plethora of networking opportunities, funding,
+                  and decision-making within the WEB3SG community.
+                  <br />
+                  <br />
+                  The pass will be priced at 20 KUB, and will be available to
+                  outstanding members of the community - then if supply allows,
+                  it will be available to the public.
+                  <br />
+                  <br />
+                  Our mint date was 5 May 2023. Be sure to follow{" "}
+                  <a
+                    className="text-[#5865F2]"
+                    href="https://twitter.com/web3th_eth"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Web3Thailand
+                  </a>{" "}
+                  and{" "}
+                  <a
+                    className="text-[#5865F2]"
+                    href="https://twitter.com/web3sg"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Web3SG
+                  </a>{" "}
+                  on Twitter. Join our discord at{" "}
+                  <a
+                    className="text-[#5865F2]"
+                    href="https://discord.gg/web3sg"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    discord.gg/web3sg
+                  </a>
+                </p>
+              </div>
               {/* <div className="mt-10 space-y-5">
                 <h1>
                   {mintedAmount < 333
@@ -528,7 +574,7 @@ function Index({ address }) {
                 </div>
               </div> */}
             </div>
-            <div className="bg-black mx-auto my-auto p-1 rounded-sm flex">
+            {/* <div className="bg-black mx-auto my-auto p-1 rounded-sm flex">
               <div className="relative place-content-center flex md:w-[500px] w-[300px] mx-auto my-auto">
                 <Image
                   src={"/images/genesisPass.gif"}
@@ -538,7 +584,7 @@ function Index({ address }) {
                   className="flex mx-auto"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
